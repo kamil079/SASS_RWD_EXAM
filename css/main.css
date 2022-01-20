@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.task-02 {
+  display: flex;
+}
+.task-02 .el-1 {
+  background: #f9c00c;
+  height: 200px;
+  width: 200px;
+}
+.task-02 .el-2 {
+  background: #00b9f1;
+  height: 200px;
+  width: 200px;
+}
+.task-02 .el-3 {
+  background: #7200da;
+  height: 200px;
+  width: 200px;
+}
+.task-02 .el-4 {
+  background: #f9320c;
+  height: 200px;
+  width: 200px;
+}
+.task-02 .el-5 {
+  background: #75d701;
+  height: 200px;
+  width: 200px;
+}
+
+.task-03 .arrow-test-blue-top-20px {
+  border: solid blue;
+  border-top-width: 20px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "sass:list";
+
+
+$map-col: (
+    gold: #f9c00c,
+    blue: #00b9f1,
+    purple: #7200da,
+    red: #f9320c,
+    green: #75d701,
+);
+
+$list-col: map-values($map-col);
+
+.task-02 {
+    display: flex;
+
+    @for $i from 1 through 5 {
+        .el-#{$i} {
+            background: nth($list-col, $i);
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
