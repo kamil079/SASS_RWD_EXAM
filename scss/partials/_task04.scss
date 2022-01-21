@@ -1,0 +1,59 @@
+@use "sass:map";
+@use "sass:list";
+
+@import "./task02";
+
+$nr-columns: 10;
+
+.task-04 {
+    .container {
+        .row {
+            width: 1200px;
+            // height: 100vh;
+            display: flex;
+
+            @for $i from 1 through $nr-columns {
+                .col-#{$i} {
+                    width: calc((100 / $nr-columns) * $i) * 1%;
+                }
+            }
+        }
+        .row-1,
+        .row-4 {
+            height: 50px;
+        }
+
+        .row-2 {
+            height: 250px;
+            .col-10 {
+                background: nth($list-col, 3);
+            }
+        }
+        .row-3 {
+            height: 100px;
+
+            @for $i from 1 through 5 {
+                .col-4:nth-child(#{$i}) {
+                    background: lighten(nth($list-col, 4), $i * 5);
+                }
+            }
+        }
+
+        .row-1 {
+            .col-2 {
+                background: nth($list-col, 1);
+            }
+            .col-8 {
+                background: nth($list-col, 2);
+            }
+        }
+        .row-4 {
+            .col-5 {
+                background: nth($list-col, 5);
+            }
+            .col-5:last-child {
+                background: lighten(nth($list-col, 5), 20%);
+            }
+        }
+    }
+}

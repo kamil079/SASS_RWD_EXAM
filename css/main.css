@@ -34,7 +34,156 @@
 }
 
 .task-03 .arrow-test-blue-top-20px {
-  border: solid blue;
-  border-top-width: 20px;
+  width: 20px;
+  border: 20px solid transparent;
+  border-top-color: dodgerblue;
+}
+.task-03 .arrow-test-red-left-25px {
+  width: 25px;
+  border: 25px solid transparent;
+  border-left-color: crimson;
+}
+.task-03 .arrow-test-green-right-60px {
+  width: 60px;
+  border: 60px solid transparent;
+  border-right-color: seagreen;
+}
+.task-03 .arrow-test-orange-bottom-100px {
+  width: 100px;
+  border: 100px solid transparent;
+  border-bottom-color: orangered;
+}
+
+.task-02 {
+  display: flex;
+}
+.task-02 .el-1 {
+  background: #f9c00c;
+  height: 200px;
+  width: 200px;
+}
+.task-02 .el-2 {
+  background: #00b9f1;
+  height: 200px;
+  width: 200px;
+}
+.task-02 .el-3 {
+  background: #7200da;
+  height: 200px;
+  width: 200px;
+}
+.task-02 .el-4 {
+  background: #f9320c;
+  height: 200px;
+  width: 200px;
+}
+.task-02 .el-5 {
+  background: #75d701;
+  height: 200px;
+  width: 200px;
+}
+
+.task-04 .container .row {
+  width: 1200px;
+  display: flex;
+}
+.task-04 .container .row .col-1 {
+  width: 10%;
+}
+.task-04 .container .row .col-2 {
+  width: 20%;
+}
+.task-04 .container .row .col-3 {
+  width: 30%;
+}
+.task-04 .container .row .col-4 {
+  width: 40%;
+}
+.task-04 .container .row .col-5 {
+  width: 50%;
+}
+.task-04 .container .row .col-6 {
+  width: 60%;
+}
+.task-04 .container .row .col-7 {
+  width: 70%;
+}
+.task-04 .container .row .col-8 {
+  width: 80%;
+}
+.task-04 .container .row .col-9 {
+  width: 90%;
+}
+.task-04 .container .row .col-10 {
+  width: 100%;
+}
+.task-04 .container .row-1,
+.task-04 .container .row-4 {
+  height: 50px;
+}
+.task-04 .container .row-2 {
+  height: 250px;
+}
+.task-04 .container .row-2 .col-10 {
+  background: #7200da;
+}
+.task-04 .container .row-3 {
+  height: 100px;
+}
+.task-04 .container .row-3 .col-4:nth-child(1) {
+  background: #fa4725;
+}
+.task-04 .container .row-3 .col-4:nth-child(2) {
+  background: #fa5c3e;
+}
+.task-04 .container .row-3 .col-4:nth-child(3) {
+  background: #fb7157;
+}
+.task-04 .container .row-3 .col-4:nth-child(4) {
+  background: #fb8670;
+}
+.task-04 .container .row-3 .col-4:nth-child(5) {
+  background: #fc9b88;
+}
+.task-04 .container .row-1 .col-2 {
+  background: #f9c00c;
+}
+.task-04 .container .row-1 .col-8 {
+  background: #00b9f1;
+}
+.task-04 .container .row-4 .col-5 {
+  background: #75d701;
+}
+.task-04 .container .row-4 .col-5:last-child {
+  background: #a7fe40;
+}
+
+.task-05 {
+  height: 100vh;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .task-05 {
+    position: relative;
+  }
+  .task-05 img {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media (min-width: 1025px) {
+  .task-05 {
+    position: relative;
+  }
+  .task-05 img {
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,10 +1,20 @@
 @mixin arrow($color, $direction, $size) {
-    border: solid $color;
-    border-#{$direction}-width: $size;
+    width: $size;
+    border: $size solid transparent;
+    border-#{$direction}-color: $color;
 }
 
 .task-03 {
     .arrow-test-blue-top-20px {
-        @include arrow(blue, top, 20px);
+        @include arrow(dodgerblue, top, 20px);
+    }
+    .arrow-test-red-left-25px {
+        @include arrow(crimson, left, 25px)
+    }
+    .arrow-test-green-right-60px {
+        @include arrow(seagreen, right, 60px)
+    }
+    .arrow-test-orange-bottom-100px {
+        @include arrow(orangered, bottom, 100px)
     }
 }
